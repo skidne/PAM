@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center">
+
+		<TextView
+			android:text="Moldcell Websms"
+			android:textSize="30sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/holo_purple"
+			android:paddingTop="10sp"
+		/>
+
+		<TextView
+			android:text=""
+			android:textSize="10sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/holo_red_light"
+			android:id="@+id/errors"
+		/>
+		
+		<TextView
+			android:text="Enter your number"
+			android:textSize="20sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/holo_purple"
+			android:paddingTop="5sp"
+		/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:text="+373 "
+				android:textSize="15sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/holo_purple"
+			/>
+
+			<EditText
+				android:id="@+id/number"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:inputType="phone"
+				android:hint="XX XXX XXX"
+			/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="10sp">
+
+			<TextView
+				android:text="From: "
+				android:textSize="20sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/holo_purple"	
+			/>
+
+			<EditText
+				android:id="@+id/from"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+				android:minWidth="100sp"
+			/>
+
+		</LinearLayout>
+
+		<TextView
+			android:text="Message"
+			android:textSize="20sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/holo_purple"
+			android:paddingTop="10sp"
+		/>
+
+		<EditText
+			android:id="@+id/message"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:maxLength="140"
+			android:minLines="1"
+			android:maxLines="5"
+			android:gravity="top|left"
+			android:scrollbars="vertical"
+		/>
+
+		<ImageView
+			android:src="@android:drawable/ic_menu_gallery"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/captcha_img"
+		/>
+
+		<EditText
+			android:id="@+id/captcha_ans"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="text"
+			android:hint="Enter Captcha"
+		/>
+
+		<Button
+			android:text="Send"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/sendMsg"
+		/>
+
+	</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<TextView
+			android:text="Edit Activity"
+			android:textSize="40sp"
+			android:textColor="@android:color/holo_orange_light"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/eafssdt" />
+		<TextView
+			android:text="Date:"
+			android:textSize="20sp"
+			android:layout_marginTop="40sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/datetextEdit" />
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="..."
+			android:id="@+id/eventdataEdit"/>
+		<TimePicker
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/timePickerEdit" />
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Save"
+				android:background="@android:color/holo_blue_bright"
+				android:textColor="@android:color/black"
+				android:id="@+id/savebtn" />
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Remove"
+				android:background="@android:color/holo_red_dark"
+				android:textColor="@android:color/black"
+				android:id="@+id/remove" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="match_parent"
+	android:layout_weight="1"
+	android:gravity="center">
+	<Button
+		android:text="Notify"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/notify" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Enter Something"
+		android:id="@+id/input"/>
+	<Button
+		android:text="Search"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/search" />
+	<RadioGroup
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:checkedButton="@+id/backcam"
+		android:id="@+id/radioGroup">
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Back Camera"
+			android:id="@+id/backcam" />
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Front Camera"
+			android:id="@+id/frontcam" />
+	</RadioGroup>
+	<Button
+		android:text="Camera"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/takepic" />
+	<Button
+		android:text="Press me!"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/kek" />
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/perm"
+	/>
+</LinearLayout>

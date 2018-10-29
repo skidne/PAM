@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="action_settings">Settings</string>
+  <string name="permission_location_rationale">Permission</string>
+  <string name="ok">OK</string>
+  <string name="permision_available_camera">Camera Available</string>
+  <string name="permissions_not_granted">Camera Not Available</string>
+</resources>
